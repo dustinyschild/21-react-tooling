@@ -39,7 +39,7 @@ module.exports = {
       template: './src/index.ejs', // Load a custom template (ejs by default see the FAQ for details)
     }),
     new ExtractTextPlugin({
-      filename: 'style/main.scss',
+      filename: 'style/main.css',
       disable: false,
       allChunks: true
     })
