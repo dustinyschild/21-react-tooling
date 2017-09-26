@@ -1,12 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
 const path = require('path');
 
-
-
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/main.js',
   output: {
     path: __dirname + '/dist',
     filename: 'app.bundle.js'
@@ -35,14 +32,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Web Thingy Demo',
+      title: 'Generate Cowsay Lorem',
         minify: {
-          collapseWhitespace: true
+          collapseWhitespace: false
         },
       template: './src/index.ejs', // Load a custom template (ejs by default see the FAQ for details)
     }),
     new ExtractTextPlugin({
-      filename: 'app.css',
+      filename: 'style/main.scss',
       disable: false,
       allChunks: true
     })

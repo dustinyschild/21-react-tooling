@@ -4,6 +4,8 @@
   "description": "![DV](https://www.deltavcodeschool.com/wp-content/uploads/DeltaV.png) 21: React Tooling\r ======",
   "main": "webpack.config.js",
   "scripts": {
+    "dev": "webpack-dev-server",
+    "prod": "webpack -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
